@@ -160,7 +160,7 @@ init()
 
 with st.sidebar:
     st.title("🎮 Game Menu")
-    page = st.radio("Navigate",["Home","Play Quiz","Question Bank","Leaderboard","About & Report"], index=["Home","Play Quiz","Question Bank","Leaderboard","About & Report"].index(st.session_state.page) if st.session_state.page in ["Home","Play Quiz","Question Bank","Leaderboard","About & Report"] else 0)
+    page = st.radio("Navigate",["Home","Play Quiz","Question Bank","Leaderboard","About & Report"], index=["Home","Play Quiz","Question Bank","Leaderboard","About & Report"].index(st.session_state.page) if st.session_state.page in ["Home","Play Quiz","Question Bank","Leaderboard"] else 0)
     st.session_state.page=page
     st.divider()
     st.caption("Eden Varkey Rijo")
@@ -333,32 +333,3 @@ elif page=="Leaderboard":
     else: st.info("No completed quizzes yet. Finish a quiz to appear here.")
     st.warning("This is a local/session leaderboard, not a shared multi-user database. For a persistent online leaderboard, connect a database.")
 
-elif page=="About & Report":
-    st.subheader("📝 Tool description and game design")
-    st.markdown("""
-**Title:** AI Quest — Interactive AI Quiz Game (DSC401-6, Units I & II)
-
-**Tool used:** Python and Streamlit. Streamlit turns a Python script into an interactive browser-based application.
-
-**Objective:** To revise and assess foundational Artificial Intelligence concepts through varied question formats, practical scenarios, and search/state-space problems.
-
-**Design:** The player chooses a name, number of questions, difficulty, topic filters, timer, and randomization. Questions are displayed one at a time. The player can use a hint, check an answer, move between questions, and submit the quiz. The result page calculates the score and accuracy, explains each correct answer, and allows a CSV result download.
-
-**Question bank:** The included bank contains more than 50 questions across AI foundations and applications, the Turing Test, rational and intelligent agents, environments, problem formulation, production systems, search design, BFS, DFS, iterative deepening, hill climbing, heuristic and best-first search, CSP, and means-end analysis. It includes real-world scenarios and search/state-space calculations.
-
-**Evaluation:** Score = number of correct answers. Accuracy (%) = correct answers ÷ total questions × 100.
-
-**Limitations:** The leaderboard is stored only in the current app session. The questions are educational practice material and should be checked against the exact Unit I and II lecture notes before final submission.
-
-**Screenshots to include in your report:**
-1. Home page with quiz settings.
-2. A question screen showing the topic, progress bar, timer and answer choices.
-3. Immediate feedback after checking an answer.
-4. Final result page showing score and answer explanations.
-5. Question Bank page with answer key.
-""")
-    st.markdown("### Requirements checklist")
-    st.write("✅ 50+ questions · ✅ Multiple formats · ✅ 10+ real-world scenarios · ✅ 5+ search problems · ✅ scoring · ✅ feedback · ✅ hints · ✅ timer option · ✅ randomization · ✅ progress · ✅ answer key · ✅ result export")
-    st.download_button("⬇️ Download report text", """AI QUEST — INTERACTIVE AI QUIZ GAME\nCourse: DSC401-6 Artificial Intelligence\n\nObjective:\nTo develop an interactive quiz game covering Units I and II of Artificial Intelligence.\n\nSoftware used:\nPython and Streamlit.\n\nDesign and working:\nThe application provides a home page where the user selects player name, quiz size, difficulty, timer, topics and randomization. The selected questions are displayed one at a time. Users select an answer, request a hint, check their answer, and navigate through the quiz. At the end, the system displays score, accuracy and explanations. A CSV result can be downloaded. The Question Bank page displays all questions and the answer key.\n\nCoverage:\nThe bank contains more than 50 questions covering AI foundations and applications, the Turing Test, agents, environments, problem spaces, production systems, BFS, DFS, iterative deepening, hill climbing, heuristic and best-first search, CSP, and means-end analysis. Formats include MCQ, True/False, Assertion–Reason, fill-in-the-blank, scenario/application and problem-solving questions.\n\nScoring:\nScore = number of correct answers. Accuracy = (correct answers / total questions) x 100.\n\nConclusion:\nAI Quest provides a simple interactive way to revise AI concepts and practise search-related problems. The interface provides feedback and explanations to support learning.\n\nScreenshots to attach:\n1. Home page and quiz setup.\n2. Quiz question with progress.\n3. Immediate feedback.\n4. Final result and answer review.\n5. Question bank and answer key.\n""",file_name="AI_Quiz_Report.txt",mime="text/plain")
-
-# data JSON embedded in Python literal
