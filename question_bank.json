@@ -1,0 +1,802 @@
+[
+  {
+    "topic": "Foundations of AI",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "What is the main goal of Artificial Intelligence?",
+    "options": [
+      "Make machines perform tasks requiring human-like intelligence",
+      "Only store large amounts of data",
+      "Replace all computer hardware",
+      "Create internet connections"
+    ],
+    "correct_answer": "Make machines perform tasks requiring human-like intelligence",
+    "explanation": "AI aims to build systems that perform tasks such as reasoning, learning, perception and decision-making."
+  },
+  {
+    "topic": "Foundations of AI",
+    "difficulty": "Easy",
+    "type": "True/False",
+    "question": "AI is used only in robots.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "explanation": "AI is also used in search engines, healthcare, finance, education and recommendation systems."
+  },
+  {
+    "topic": "Foundations of AI",
+    "difficulty": "Easy",
+    "type": "Fill in the Blank",
+    "question": "The field concerned with making machines perform tasks associated with intelligence is called _____.",
+    "options": [
+      "Artificial Intelligence",
+      "Database Management",
+      "Networking",
+      "Operating Systems"
+    ],
+    "correct_answer": "Artificial Intelligence",
+    "explanation": "Artificial Intelligence (AI) studies intelligent behaviour and systems."
+  },
+  {
+    "topic": "Turing Test",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "The Turing Test is associated with which researcher?",
+    "options": [
+      "Alan Turing",
+      "Charles Babbage",
+      "John McCarthy",
+      "Claude Shannon"
+    ],
+    "correct_answer": "Alan Turing",
+    "explanation": "Alan Turing proposed the imitation game in 1950."
+  },
+  {
+    "topic": "Turing Test",
+    "difficulty": "Medium",
+    "type": "True/False",
+    "question": "Passing the Turing Test proves that a machine has consciousness.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "explanation": "It tests whether a machine's conversational behaviour can be distinguished from a human's, not whether it is conscious."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Easy",
+    "type": "Scenario",
+    "question": "A hospital system flags X-rays that may show disease for a doctor to review. Which AI application is this?",
+    "options": [
+      "Medical image analysis",
+      "Route planning",
+      "Speech synthesis",
+      "Game rendering"
+    ],
+    "correct_answer": "Medical image analysis",
+    "explanation": "AI can support clinicians by identifying patterns in medical images."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Easy",
+    "type": "Scenario",
+    "question": "A streaming app recommends films based on viewing history. What is the main AI task?",
+    "options": [
+      "Recommendation",
+      "Sorting files only",
+      "Encryption",
+      "Compiler design"
+    ],
+    "correct_answer": "Recommendation",
+    "explanation": "Recommendation systems learn preferences from behaviour and item features."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A car detects pedestrians and changes speed accordingly. Which AI capability is most directly involved?",
+    "options": [
+      "Perception and decision-making",
+      "Text formatting",
+      "File compression",
+      "Manual data entry"
+    ],
+    "correct_answer": "Perception and decision-making",
+    "explanation": "The system interprets sensor data and chooses an action."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A bank model marks a transaction as suspicious based on unusual spending patterns. This is an example of:",
+    "options": [
+      "Anomaly/fraud detection",
+      "Image segmentation",
+      "Speech recognition",
+      "Game search"
+    ],
+    "correct_answer": "Anomaly/fraud detection",
+    "explanation": "AI can identify transactions that differ from expected patterns."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A voice assistant converts spoken words into text before responding. Which task is used?",
+    "options": [
+      "Speech recognition",
+      "Path compression",
+      "Sorting",
+      "Database indexing only"
+    ],
+    "correct_answer": "Speech recognition",
+    "explanation": "Speech recognition maps audio signals to words or tokens."
+  },
+  {
+    "topic": "Rational Agents",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "A rational agent chooses an action that:",
+    "options": [
+      "Maximizes expected performance given its percepts and knowledge",
+      "Always repeats the last action",
+      "Uses the most expensive action",
+      "Never changes its behaviour"
+    ],
+    "correct_answer": "Maximizes expected performance given its percepts and knowledge",
+    "explanation": "Rationality depends on the performance measure, percept history, available actions and knowledge."
+  },
+  {
+    "topic": "Intelligent Agents",
+    "difficulty": "Easy",
+    "type": "Fill in the Blank",
+    "question": "An agent receives information through _____ and affects its environment through actuators.",
+    "options": [
+      "sensors",
+      "printers",
+      "compilers",
+      "databases"
+    ],
+    "correct_answer": "sensors",
+    "explanation": "Sensors receive percepts; actuators carry out actions."
+  },
+  {
+    "topic": "Agents and Environments",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "In a robot, a camera most commonly acts as a:",
+    "options": [
+      "Sensor",
+      "Actuator",
+      "Performance measure",
+      "State-space node"
+    ],
+    "correct_answer": "Sensor",
+    "explanation": "A camera senses the environment."
+  },
+  {
+    "topic": "Agents and Environments",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "A robot wheel motor is an example of a(n):",
+    "options": [
+      "Actuator",
+      "Sensor",
+      "Percept",
+      "Heuristic"
+    ],
+    "correct_answer": "Actuator",
+    "explanation": "Motors perform actions and are actuators."
+  },
+  {
+    "topic": "Good Behaviour",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "An agent's behaviour is judged primarily using its:",
+    "options": [
+      "Performance measure",
+      "Source-code length",
+      "Brand name",
+      "Screen size"
+    ],
+    "correct_answer": "Performance measure",
+    "explanation": "A performance measure specifies what counts as success."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Chess, where the full board is visible to both players, is usually considered:",
+    "options": [
+      "Fully observable",
+      "Partially observable",
+      "Unknown by definition",
+      "Continuous only"
+    ],
+    "correct_answer": "Fully observable",
+    "explanation": "The board state is available to the players, though the opponent's future actions are not."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Medium",
+    "type": "True/False",
+    "question": "A deterministic environment is one in which the next state is fully determined by the current state and action.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "explanation": "This is the standard meaning of a deterministic transition."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Driving in city traffic is generally:",
+    "options": [
+      "Dynamic and partially observable",
+      "Static and fully observable",
+      "Single-state and deterministic in every detail",
+      "Always episodic"
+    ],
+    "correct_answer": "Dynamic and partially observable",
+    "explanation": "Traffic changes while the agent acts, and sensors cannot reveal everything."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "An environment is episodic when:",
+    "options": [
+      "Each decision episode is largely independent of the next",
+      "Actions always affect every future state",
+      "The agent cannot observe anything",
+      "There is no performance measure"
+    ],
+    "correct_answer": "Each decision episode is largely independent of the next",
+    "explanation": "In episodic tasks, each episode can be evaluated independently."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Medium",
+    "type": "Assertion–Reason",
+    "question": "Assertion: A dynamic environment can change while the agent is deliberating. Reason: Other agents or processes may continue to act over time.",
+    "options": [
+      "Both true; Reason explains Assertion",
+      "Both true; Reason does not explain Assertion",
+      "Assertion true; Reason false",
+      "Assertion false; Reason true"
+    ],
+    "correct_answer": "Both true; Reason explains Assertion",
+    "explanation": "A dynamic environment changes with time, including while the agent is choosing."
+  },
+  {
+    "topic": "Problems and Problem Spaces",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "A well-defined search problem commonly includes:",
+    "options": [
+      "Initial state, actions, transition model, goal test and path cost",
+      "Only a final answer",
+      "Only the program name",
+      "Only the heuristic"
+    ],
+    "correct_answer": "Initial state, actions, transition model, goal test and path cost",
+    "explanation": "These components define the search task."
+  },
+  {
+    "topic": "State Space Search",
+    "difficulty": "Easy",
+    "type": "Fill in the Blank",
+    "question": "The collection of states reachable under the problem's actions is called the _____ space.",
+    "options": [
+      "state",
+      "colour",
+      "memory",
+      "syntax"
+    ],
+    "correct_answer": "state",
+    "explanation": "A state space represents possible configurations of a problem."
+  },
+  {
+    "topic": "Production Systems",
+    "difficulty": "Medium",
+    "type": "Match the Following",
+    "question": "Match each term with its description. Which option gives all correct pairs? I. Sensor  II. Actuator  III. Heuristic  IV. Goal test",
+    "options": [
+      "I-receives percepts; II-performs actions; III-estimates distance/cost to goal; IV-checks whether goal is reached",
+      "I-performs actions; II-receives percepts; III-checks goal; IV-estimates cost",
+      "I-estimates cost; II-checks goal; III-receives percepts; IV-performs actions",
+      "I-checks goal; II-performs actions; III-receives percepts; IV-estimates cost"
+    ],
+    "correct_answer": "I-receives percepts; II-performs actions; III-estimates distance/cost to goal; IV-checks whether goal is reached",
+    "explanation": "Sensors receive information, actuators perform actions, heuristics estimate the remaining cost or distance, and a goal test checks whether the target condition is met."
+  },
+  {
+    "topic": "Problem Characteristics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "A problem where actions can be undone easily is often described as having:",
+    "options": [
+      "Recoverable steps",
+      "No states",
+      "No goal test",
+      "Infinite sensors"
+    ],
+    "correct_answer": "Recoverable steps",
+    "explanation": "Recoverability concerns whether an action can be reversed or its effects repaired."
+  },
+  {
+    "topic": "Search Program Design",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Why should a search algorithm usually detect repeated states?",
+    "options": [
+      "To avoid unnecessary loops and repeated work",
+      "To make the goal disappear",
+      "To increase duplicate paths",
+      "To remove the initial state"
+    ],
+    "correct_answer": "To avoid unnecessary loops and repeated work",
+    "explanation": "Repeated-state checking can prevent cycles and improve efficiency."
+  },
+  {
+    "topic": "Breadth-First Search",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Which data structure is typically used by Breadth-First Search?",
+    "options": [
+      "Queue (FIFO)",
+      "Stack (LIFO)",
+      "Priority queue ordered by heuristic only",
+      "Spreadsheet"
+    ],
+    "correct_answer": "Queue (FIFO)",
+    "explanation": "BFS explores the shallowest frontier nodes first using a FIFO queue."
+  },
+  {
+    "topic": "Breadth-First Search",
+    "difficulty": "Medium",
+    "type": "Problem-solving",
+    "question": "In a tree, S has children A and B; A has children C and D; B has child E. What is BFS order (left to right)?",
+    "options": [
+      "S, A, B, C, D, E",
+      "S, A, C, D, B, E",
+      "S, B, E, A, C, D",
+      "C, D, A, E, B, S"
+    ],
+    "correct_answer": "S, A, B, C, D, E",
+    "explanation": "BFS visits level by level: S; then A,B; then C,D,E."
+  },
+  {
+    "topic": "Depth-First Search",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Which data structure is commonly associated with iterative DFS?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Sorted array only",
+      "Hash of answers"
+    ],
+    "correct_answer": "Stack",
+    "explanation": "DFS explores a branch deeply before backtracking, often using a stack."
+  },
+  {
+    "topic": "Depth-First Search",
+    "difficulty": "Medium",
+    "type": "Problem-solving",
+    "question": "For left-to-right DFS on S→(A,B), A→(C,D), B→E, what is the visit order?",
+    "options": [
+      "S, A, C, D, B, E",
+      "S, A, B, C, D, E",
+      "S, B, E, A, C, D",
+      "S, C, A, D, E, B"
+    ],
+    "correct_answer": "S, A, C, D, B, E",
+    "explanation": "DFS explores A's subtree before moving to B."
+  },
+  {
+    "topic": "Iterative Deepening",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Iterative deepening search combines the space efficiency of DFS with the:",
+    "options": [
+      "Shallow-solution guarantee of BFS for equal step costs",
+      "Need to store every node like BFS",
+      "Requirement for a perfect heuristic",
+      "Inability to revisit nodes"
+    ],
+    "correct_answer": "Shallow-solution guarantee of BFS for equal step costs",
+    "explanation": "It repeatedly runs depth-limited DFS with increasing limits."
+  },
+  {
+    "topic": "Iterative Deepening",
+    "difficulty": "Medium",
+    "type": "True/False",
+    "question": "Iterative deepening runs depth-limited search repeatedly with larger depth limits.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "explanation": "The depth limit increases until a solution is found."
+  },
+  {
+    "topic": "Uninformed Search",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "When all step costs are equal, BFS finds a solution with the fewest:",
+    "options": [
+      "Actions/edges",
+      "Bytes in memory",
+      "Heuristic estimates",
+      "Alphabetical labels"
+    ],
+    "correct_answer": "Actions/edges",
+    "explanation": "BFS is complete and optimal for equal step costs under standard conditions."
+  },
+  {
+    "topic": "Hill Climbing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Hill climbing chooses a neighbouring state that:",
+    "options": [
+      "Improves the evaluation value according to its rule",
+      "Is always the first state alphabetically",
+      "Has the greatest path cost regardless of objective",
+      "Is guaranteed to be the global optimum"
+    ],
+    "correct_answer": "Improves the evaluation value according to its rule",
+    "explanation": "Hill climbing uses local improvement and can become stuck."
+  },
+  {
+    "topic": "Hill Climbing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "A local maximum is a state that:",
+    "options": [
+      "Is better than nearby states but may not be globally best",
+      "Is worse than every neighbour",
+      "Must be the goal",
+      "Has no evaluation value"
+    ],
+    "correct_answer": "Is better than nearby states but may not be globally best",
+    "explanation": "Local search may stop at a locally best state."
+  },
+  {
+    "topic": "Hill Climbing Variations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Random-restart hill climbing helps address local maxima by:",
+    "options": [
+      "Starting the search again from different initial states",
+      "Deleting the objective function",
+      "Making every state a goal",
+      "Using BFS queues only"
+    ],
+    "correct_answer": "Starting the search again from different initial states",
+    "explanation": "Different starting points may reach different regions of the search space."
+  },
+  {
+    "topic": "Heuristic Search",
+    "difficulty": "Easy",
+    "type": "Fill in the Blank",
+    "question": "A heuristic function h(n) estimates the cost from node n to the _____.",
+    "options": [
+      "goal",
+      "initial keyboard",
+      "database",
+      "sensor"
+    ],
+    "correct_answer": "goal",
+    "explanation": "Heuristics guide search toward promising states."
+  },
+  {
+    "topic": "Best-First Search",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Greedy best-first search typically selects the frontier node with the smallest:",
+    "options": [
+      "Heuristic estimate h(n)",
+      "Depth in every possible implementation",
+      "Number of letters in its name",
+      "Accumulated cost g(n) only"
+    ],
+    "correct_answer": "Heuristic estimate h(n)",
+    "explanation": "Greedy best-first search is guided by h(n)."
+  },
+  {
+    "topic": "Heuristic Search",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "In A* search, the evaluation function is:",
+    "options": [
+      "f(n) = g(n) + h(n)",
+      "f(n) = g(n) − h(n)",
+      "f(n) = h(n) only in all cases",
+      "f(n) = depth × name"
+    ],
+    "correct_answer": "f(n) = g(n) + h(n)",
+    "explanation": "A* combines cost so far g(n) and estimated remaining cost h(n)."
+  },
+  {
+    "topic": "Heuristic Search",
+    "difficulty": "Hard",
+    "type": "True/False",
+    "question": "For graph-search A*, an admissible heuristic never overestimates the true remaining optimal cost.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "explanation": "Admissibility means h(n) is no greater than the true minimum remaining cost."
+  },
+  {
+    "topic": "Search State Space",
+    "difficulty": "Medium",
+    "type": "Problem-solving",
+    "question": "Edges S-A=1, S-B=4, A-G=5, B-G=1. Which path has the lowest total cost?",
+    "options": [
+      "S → B → G (cost 5)",
+      "S → A → G (cost 6)",
+      "Both have cost 7",
+      "Cannot compare the costs"
+    ],
+    "correct_answer": "S → B → G (cost 5)",
+    "explanation": "S-B-G costs 4+1=5; S-A-G costs 1+5=6."
+  },
+  {
+    "topic": "Search State Space",
+    "difficulty": "Medium",
+    "type": "Problem-solving",
+    "question": "A search tree has branching factor 3 and depth limit 2. How many nodes are in a full tree including the root?",
+    "options": [
+      "13",
+      "9",
+      "6",
+      "5"
+    ],
+    "correct_answer": "13",
+    "explanation": "1 + 3 + 3² = 13 nodes."
+  },
+  {
+    "topic": "Search State Space",
+    "difficulty": "Hard",
+    "type": "Problem-solving",
+    "question": "For a grid pathfinding problem, what is a suitable goal test?",
+    "options": [
+      "Check whether the current position equals the destination",
+      "Check whether the queue is named Q",
+      "Check whether the path has a letter A",
+      "Stop after one move regardless of position"
+    ],
+    "correct_answer": "Check whether the current position equals the destination",
+    "explanation": "A goal test checks whether the current state satisfies the target condition."
+  },
+  {
+    "topic": "Constraint Satisfaction Problems",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "A CSP consists of:",
+    "options": [
+      "Variables, domains and constraints",
+      "Sensors, motors and batteries only",
+      "A queue and a stack only",
+      "A goal with no variables"
+    ],
+    "correct_answer": "Variables, domains and constraints",
+    "explanation": "CSPs assign values to variables while satisfying constraints."
+  },
+  {
+    "topic": "Constraint Satisfaction Problems",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "Three adjacent regions must have different colours from each neighbouring region. This is naturally modelled as:",
+    "options": [
+      "A graph-colouring CSP",
+      "A speech recognition problem",
+      "A sorting problem",
+      "A production printer"
+    ],
+    "correct_answer": "A graph-colouring CSP",
+    "explanation": "Regions are variables, colours are domains, and adjacency gives constraints."
+  },
+  {
+    "topic": "Constraint Satisfaction Problems",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "In a CSP, a domain is:",
+    "options": [
+      "The set of possible values for a variable",
+      "The list of all search algorithms",
+      "The final score only",
+      "A type of actuator"
+    ],
+    "correct_answer": "The set of possible values for a variable",
+    "explanation": "A variable's domain lists the values it may take."
+  },
+  {
+    "topic": "Constraint Satisfaction Problems",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "The minimum-remaining-values (MRV) heuristic chooses the variable with:",
+    "options": [
+      "The fewest legal values remaining",
+      "The most letters in its name",
+      "The highest assigned value",
+      "No constraints considered ever"
+    ],
+    "correct_answer": "The fewest legal values remaining",
+    "explanation": "MRV chooses the most constrained unassigned variable."
+  },
+  {
+    "topic": "Means-End Analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Means-end analysis works by:",
+    "options": [
+      "Comparing current state with goal and selecting actions that reduce the difference",
+      "Randomly selecting actions without a goal",
+      "Expanding every state in alphabetical order only",
+      "Removing all subgoals"
+    ],
+    "correct_answer": "Comparing current state with goal and selecting actions that reduce the difference",
+    "explanation": "It identifies differences and selects operators to reduce them, often creating subgoals."
+  },
+  {
+    "topic": "Means-End Analysis",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A robot needs to move a box to a shelf but must first clear a path. Clearing the path is best understood as:",
+    "options": [
+      "A subgoal that helps achieve the main goal",
+      "The final performance measure",
+      "A sensor reading only",
+      "A heuristic with no action"
+    ],
+    "correct_answer": "A subgoal that helps achieve the main goal",
+    "explanation": "Means-end analysis can introduce subgoals needed before the main action."
+  },
+  {
+    "topic": "AI Ethics and Applications",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A hiring model performs worse for one demographic because its training data was unbalanced. What issue is this?",
+    "options": [
+      "Algorithmic bias/fairness",
+      "Breadth-first traversal",
+      "Actuator failure only",
+      "A deterministic transition"
+    ],
+    "correct_answer": "Algorithmic bias/fairness",
+    "explanation": "Unrepresentative data can produce unfair or biased outcomes."
+  },
+  {
+    "topic": "AI Applications",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "A farm uses camera images and sensor readings to identify crop disease early. This is an example of:",
+    "options": [
+      "AI-assisted precision agriculture",
+      "Only manual sorting",
+      "A Turing Test",
+      "Iterative deepening"
+    ],
+    "correct_answer": "AI-assisted precision agriculture",
+    "explanation": "AI can analyse imagery and sensor data to support crop monitoring."
+  },
+  {
+    "topic": "Agents and Environments",
+    "difficulty": "Hard",
+    "type": "Assertion–Reason",
+    "question": "Assertion: A rational agent is always omniscient. Reason: Rationality means choosing the best expected action based on available information.",
+    "options": [
+      "Assertion false; Reason true",
+      "Both true; Reason explains Assertion",
+      "Assertion true; Reason false",
+      "Both false"
+    ],
+    "correct_answer": "Assertion false; Reason true",
+    "explanation": "Rationality uses available information; it does not require knowing every fact or future outcome."
+  },
+  {
+    "topic": "Search Program Design",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Which design choice helps make a search algorithm reproducible and easier to test?",
+    "options": [
+      "Specify state representation, successor function, goal test and cost clearly",
+      "Change the goal randomly on each step",
+      "Hide all stopping conditions",
+      "Use inconsistent state labels"
+    ],
+    "correct_answer": "Specify state representation, successor function, goal test and cost clearly",
+    "explanation": "Clear definitions make search behaviour testable and interpretable."
+  },
+  {
+    "topic": "Hill Climbing Variations",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Simulated annealing sometimes accepts a worse move mainly to:",
+    "options": [
+      "Escape local optima and explore more of the state space",
+      "Guarantee no extra computation",
+      "Ensure every move improves the score",
+      "Remove all randomness"
+    ],
+    "correct_answer": "Escape local optima and explore more of the state space",
+    "explanation": "Occasionally accepting worse states can help escape local traps."
+  },
+  {
+    "topic": "Problem Characteristics",
+    "difficulty": "Medium",
+    "type": "True/False",
+    "question": "A problem's path cost can be different from the number of steps in the path.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "explanation": "Path cost may include distances, time, energy or other weighted costs."
+  },
+  {
+    "topic": "Production Systems",
+    "difficulty": "Medium",
+    "type": "Scenario",
+    "question": "In a rule-based troubleshooting assistant, 'IF battery is low THEN recommend charging' is an example of:",
+    "options": [
+      "A production rule",
+      "A queue operation",
+      "A state-space depth",
+      "A sensor actuator"
+    ],
+    "correct_answer": "A production rule",
+    "explanation": "The rule maps a condition to an action or conclusion."
+  },
+  {
+    "topic": "Nature of Environments",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "A task where the world has a finite number of discrete states and actions is described as:",
+    "options": [
+      "Discrete",
+      "Continuous",
+      "Always partially observable",
+      "Always adversarial"
+    ],
+    "correct_answer": "Discrete",
+    "explanation": "Discrete environments have distinct, countable states/actions."
+  },
+  {
+    "topic": "Best-First Search",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "A key limitation of greedy best-first search is that it:",
+    "options": [
+      "Can be misled by a heuristic and is not generally optimal",
+      "Always guarantees lowest path cost",
+      "Never uses a heuristic",
+      "Cannot use a frontier"
+    ],
+    "correct_answer": "Can be misled by a heuristic and is not generally optimal",
+    "explanation": "Greedy search prioritises estimated remaining cost and ignores cost already paid."
+  },
+  {
+    "topic": "Turing Test",
+    "difficulty": "Medium",
+    "type": "Assertion–Reason",
+    "question": "Assertion: Natural language conversation is central to the classic text-based Turing Test. Reason: The evaluator judges whether responses can be distinguished from a human's.",
+    "options": [
+      "Both true; Reason explains Assertion",
+      "Both true; Reason does not explain Assertion",
+      "Assertion true; Reason false",
+      "Assertion false; Reason true"
+    ],
+    "correct_answer": "Both true; Reason explains Assertion",
+    "explanation": "The test uses conversational responses as evidence for the evaluator's judgement."
+  }
+]
