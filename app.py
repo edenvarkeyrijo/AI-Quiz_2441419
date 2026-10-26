@@ -189,7 +189,7 @@ if page=="Home":
         randomize=st.checkbox("Randomize questions",value=True)
         topics=st.multiselect("Topics (leave empty for all)",sorted(set(q["topic"] for q in BANK)))
         submitted=st.form_submit_button("🚀 Create Quiz",use_container_width=True)
-       if submitted:
+    if submitted:
             pool = [q for q in BANK if (difficulty == "All" or q["difficulty"] == difficulty) and (not topics or q["topic"] in topics)]
             if not pool:
                 st.error("No questions match these filters. Choose a different combination.")
