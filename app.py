@@ -54,7 +54,7 @@ h1, h2, h3, h4,
 .stMarkdown h1,
 .stMarkdown h2,
 .stMarkdown h3 {
-    color: #fafafa !important;
+    color: #26264d !important;
 }
 
 /* White cards with dark text */
