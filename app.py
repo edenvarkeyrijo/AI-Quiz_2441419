@@ -29,14 +29,6 @@ label,
     color: #34344f !important;
 }
 
-/* Keep headings dark on the light background */
-h1, h2, h3, h4,
-.stMarkdown h1,
-.stMarkdown h2,
-.stMarkdown h3 {
-    color: #26264d !important;
-}
-
 /* Purple banner */
 .hero {
     padding: 28px;
@@ -55,6 +47,14 @@ h1, h2, h3, h4,
 .hero p {
     color: #f1edff !important;
     font-size: 1.05rem;
+}
+
+/* Keep headings dark on the light background */
+h1, h2, h3, h4,
+.stMarkdown h1,
+.stMarkdown h2,
+.stMarkdown h3 {
+    color: #26264d !important;
 }
 
 /* White cards with dark text */
