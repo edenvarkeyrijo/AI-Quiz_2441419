@@ -34,7 +34,7 @@ label,
     padding: 28px;
     border-radius: 22px;
     background: linear-gradient(120deg, #24245e, #6554c0, #9b5de5);
-    color: white;
+    color: #fafafa;
     margin-bottom: 18px;
 }
 
