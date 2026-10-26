@@ -189,21 +189,39 @@ if page=="Home":
         randomize=st.checkbox("Randomize questions",value=True)
         topics=st.multiselect("Topics (leave empty for all)",sorted(set(q["topic"] for q in BANK)))
         submitted=st.form_submit_button("🚀 Create Quiz",use_container_width=True)
-        if submitted:
-            pool=[q for q in BANK if (difficulty=="All" or q["difficulty"]==difficulty) and (not topics or q["topic"] in topics)]
-            if not pool: st.error("No questions match these filters. Choose a different combination.")
+       if submitted:
+            pool = [q for q in BANK if (difficulty == "All" or q["difficulty"] == difficulty) and (not topics or q["topic"] in topics)]
+            if not pool:
+                st.error("No questions match these filters. Choose a different combination.")
             else:
-                if randomize: random.shuffle(pool)
-                chosen=pool[:min(int(count),len(pool))]
-                st.session_state.name=name.strip() or "Player"
-                st.session_state.quiz=chosen
-                st.session_state.idx=0; st.session_state.answers={}; st.session_state.submitted={}
-                st.session_state.started=time.time(); st.session_state.finished=False; st.session_state.hints={}
-                st.session_state.settings={"timer":timer,"seconds":0 if timer=="No timer" else int(timer.split()[0])*60}
-                st.session_state.page="Play Quiz"
-                st.rerun()
-    st.info("Tip: For your class demonstration, select 10 questions to show the game quickly. The full bank contains more than 50 questions.")
+                if randomize:
+                    random.shuffle(pool)
+                chosen = pool[:min(int(count), len(pool))]
+                
+                # --- NEW: Randomize options for each chosen question ---
+                processed_quiz = []
+                for q in chosen:
+                    q_copy = q.copy()
+                    options_with_index = list(enumerate(q_copy["options"]))
+                    if randomize:
+                        random.shuffle(options_with_index)
+                    
+                    new_options = [opt for _, opt in options_with_index]
+                    # Find where the old correct answer ended up in the new shuffled list
+                    new_correct_idx = next(i for i, (orig_idx, _) in enumerate(options_with_index) if orig_idx == q_copy["answer"])
+                    
+                    q_copy["options"] = new_options
+                    q_copy["answer"] = new_correct_idx
+                    processed_quiz.append(q_copy)
 
+                st.session_state.name = name.strip() or "Player"
+                st.session_state.quiz = processed_quiz
+                st.session_state.idx = 0; st.session_state.answers = {}; st.session_state.submitted = {}
+                st.session_state.started = time.time(); st.session_state.finished = False; st.session_state.hints = {}
+                st.session_state.settings = {"timer": timer, "seconds": 0 if timer == "No timer" else int(timer.split()[0]) * 60}
+                st.session_state.page = "Play Quiz"
+                st.rerun()
+    
 elif page=="Play Quiz":
     if not st.session_state.quiz:
         st.warning("Create a quiz from the Home page first.")
@@ -286,7 +304,6 @@ elif page=="Play Quiz":
                     if choice is not None: st.session_state.answers[key]=q["options"].index(choice)
                     st.session_state.finished=True; st.rerun()
         st.caption("Your selected answer is saved when you check it or move to another question. Timer runs while the quiz is open.")
-
 elif page=="Question Bank":
     st.subheader("📚 Question Bank and Answer Key")
     st.write("Browse all questions and their correct answers. Use this page to prepare for the in-class demonstration.")
