@@ -160,7 +160,7 @@ init()
 
 with st.sidebar:
     st.title("🎮 Game Menu")
-    page = st.radio("Navigate",["Home","Play Quiz","Question Bank","Leaderboard","About & Report"], index=["Home","Play Quiz","Question Bank","Leaderboard","About & Report"].index(st.session_state.page) if st.session_state.page in ["Home","Play Quiz","Question Bank","Leaderboard"] else 0)
+    page = st.radio("Navigate",["Home","Play Quiz","Question Bank","Leaderboard"], index=["Home","Play Quiz","Question Bank","Leaderboard"].index(st.session_state.page) if st.session_state.page in ["Home","Play Quiz","Question Bank","Leaderboard"] else 0)
     st.session_state.page=page
     st.divider()
     st.caption("Eden Varkey Rijo")
