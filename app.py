@@ -39,7 +39,7 @@ label,
 }
 
 .hero h1 {
-    color: white !important;
+    color: #fafafa !important;
     margin: 0;
     font-size: 2.4rem;
 }
